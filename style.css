@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.bannertext{
+    flex: 1;
+}
+.bannertext h1{
+    font-size: 1.5rem;
+}
+.bannertext p{
+    padding: 10px 0;
+}
+.bannerimage{
+    flex: 1;
+}
+.bannerimage img{
+    width: 100%;
+}
+/* featured */
+.featured{
+    padding: 40px 60px;
+}
+.featured h1{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 4.9vh;
+}
+.cards{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap:0.8rem;
+}
+.card{
+    border: 2.9px solid;
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+}
+.cardimg img{
+    width: 120px;
+}
+.card h3{
+
+}
+.card p{
+    padding: 4.9px 0;
+}
+/* .abc{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    color: azure;
+}
+.icons span{
+    cursor: pointer;
+    padding: 5px;
+} */
+
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 12px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 850px){
+    html{
+        font-size: 17px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (min-width: 850px) and (max-width: 1250px){
+    html{
+        font-size: 20px;
+    }
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (min-width: 1250px){
+    html{
+        font-size: 20px;
+    }
+    .cards{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
